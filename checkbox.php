@@ -14,6 +14,13 @@
 	<div class="container padding-y-20">
 		あなたが選択した項目は<br>
 		<!-- ここから -->
+		<?php 
+		$skill = $_POST["skill"];
+		foreach ($skill as $key => $value) {
+			echo $value. "<br>";
+			echo $skill[$key]. "<br>";
+		}
+		?>
 		<!-- ここまで -->
 	</div>
 </body>
